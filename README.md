@@ -9,7 +9,7 @@ This extension does not use any additional permission and uses latest chrome man
 
 #### Details:
 Currently it adds a chromecast button to the livestream or video page for kick.com.
-To make use of it we use a popular open source library call Castjs. https://github.com/castjs/castjs
+To make use of it we use a popular open source library called Castjs. https://github.com/castjs/castjs
 We inlclude the minified version downloaded from that repository (cast.min.js).
 This script (CastJS) also adds the Google Cast sdk that is needed for web sender api. https://developers.google.com/cast/docs/web_sender/integrate
 
