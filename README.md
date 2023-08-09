@@ -1,6 +1,13 @@
 ## StreamCompanion.app Extension Overview:
 ### Chrome Extention URL: https://chrome.google.com/webstore/detail/streamcompanionapp-extens/ojhbcendomkgdccbbhjcphkdpajadfnk
 
+#### Overview: 
+This chrome extension only adds a simple google cast button (chromecast) on Videos and Livestream from kick.com. This is not a official extension.
+This extension does not use any additional permission and uses latest chrome manifest v3 maintaining a sanbox for content.js. Only host permission needed is for kick.com to add a button in the html. It should work for any chromium based browsers such as Google Chrome, Opera, Microsoft Edge, Brave, etc.
+
+#### Privacy Policy link: https://streamcompanion.app/privacy
+
+#### Details:
 Currently it adds a chromecast button to the livestream or video page for kick.com.
 To make use of it we use a popular open source library call Castjs. https://github.com/castjs/castjs
 We inlclude the minified version downloaded from that repository (cast.min.js).
@@ -12,4 +19,3 @@ The cors proxy server is a simple serverless function of "cors anywhere" a very 
 
 No self identifying information is logged or collected. As you can see the extension also do not have any special permissions.
 
-#### Privacy Policy link: https://streamcompanion.app/privacy
