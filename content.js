@@ -27,7 +27,7 @@ window.onload = () => {
                     let apiURL = 'https://kick.com/api/v1/video/' + videoId;
                     fetch(apiURL).then(response => response.json()).then(data => {
                         const masterUrl = data.source;
-                        const dynamicUrl = 'https://proxy-jrcrz65weq-uc.a.run.app/' + masterUrl;
+                        const dynamicUrl = masterUrl;
                         document.dispatchEvent(new CustomEvent('startCasting', { detail: dynamicUrl }));
                     });
                 } else {
@@ -35,7 +35,7 @@ window.onload = () => {
                     let apiURL = 'https://kick.com/api/v2/channels/' + username + '/livestream';
                     fetch(apiURL).then(response => response.json()).then(data => {
                         const masterUrl = data.data.playback_url;
-                        const dynamicUrl = 'https://proxy-jrcrz65weq-uc.a.run.app/' + masterUrl;
+                        const dynamicUrl = masterUrl;
                         document.dispatchEvent(new CustomEvent('startCasting', { detail: dynamicUrl }));
                     });
                 }

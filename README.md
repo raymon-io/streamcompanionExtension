@@ -14,8 +14,7 @@ We inlclude the minified version downloaded from that repository (cast.min.js).
 This script (CastJS) also adds the Google Cast sdk that is needed for web sender api. https://developers.google.com/cast/docs/web_sender/integrate
 
 The fetch api calls are from public apis from kick.com.
-It also uses a cors proxy server to make the final request to send the url to chromecast to avoid any potential cors error. 
-The cors proxy server is a simple serverless function of "cors anywhere" a very popular open source library. https://github.com/Rob--W/cors-anywhere
+It does not use cors proxy anymore rather directly gets information from kick.com.
 
 No self identifying information is logged or collected. As you can see the extension also do not have any special permissions.
 
